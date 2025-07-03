@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Monta o diretório atual no container para desenvolvimento com hot-reload
+      - .:/app
